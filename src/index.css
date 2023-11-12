@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +15,211 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+body {
+  @apply font-Roboto
+}
+
+.major {
+  @apply bg-slate-50  p-5
+}
+
+/*STYLE GRID ELEMENT*/
+.main {
+  @apply bg-slate-50 m-10
+}
+
+.additional__ h1 {
+  @apply text-2xl font-medium text-slate-700
+}
+
+.additional__ {
+  @apply flex justify-between mx-20 my-5
+}
+
+.additional__ button {
+  @apply text-white bg-green-600 py-2 px-4 rounded
+}
+
+.grid__outline {
+  @apply border m-10 rounded-lg border-slate-300 bg-white max-h-screen overflow-scroll
+}
+
+.table_container th {
+  @apply text-slate-400 bg-slate-50 py-3 text-sm font-medium ps-5
+}
+
+.table_container tr {
+  @apply border-solid border-2 border-slate-100
+}
+
+.table_container {
+  @apply table-auto w-full text-left
+}
+
+.table_container tr td {
+  @apply py-3 text-blue-950 ps-5
+}
+
+.name__icon {
+  @apply w-10 h-10 inline-flex justify-center items-center rounded-full me-2
+}
+
+/* STYLE SEARCH BAR*/
+form.form {
+  @apply flex w-3/4 mt-5
+}
+
+form .search {
+  @apply flex justify-center items-center w-2/5 focus:outline focus:outline-2
+}
+
+form .searchInput {
+  @apply border-0 outline-none w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none
+}
+
+form .basic {
+  @apply ms-2 shadow appearance-none border rounded
+}
+
+form label.status {
+  @apply absolute bottom-5 left-5 bg-white text-stone-400 block mb-2 text-sm font-medium
+}
+
+form select.status {
+  @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5
+}
+
+form input.time {
+  @apply shadow appearance-none border rounded py-1.5 w-full
+}
+
+/*ICONS STYLE*/
+.icons__container {
+  @apply w-full md:w-3/6 flex justify-around text-slate-500 p-5
+}
+
+.icons__container div {
+  @apply bg-zinc-100 py-1 px-2 font-medium rounded text-xs xl:text-lg cursor-pointer
+}
+
+/* STYLE NEW USR FORM*/
+.newUserContent {
+  @apply w-full h-screen flex justify-center items-center bg-black bg-opacity-75 z-20 absolute top-0 bottom-0 left-0 right-0
+}
+
+.add_new-user {
+  @apply w-1/3 bg-slate-50 rounded-md overflow-hidden outline outline-1 outline-gray-200
+}
+
+.add__user div.name__label {
+  @apply block mb-2 text-sm font-medium text-blue-950 dark:text-white
+}
+
+.add__user .name__input {
+  @apply bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5
+}
+
+.text-container {
+  @apply bg-blue-950 text-white py-5 px-5 text-lg flex justify-between
+}
+
+.form_footer {
+  @apply border-t flex justify-between p-5 items-center
+}
+
+.form_footer a {
+  @apply underline cursor-pointer 
+}
+
+.form_footer .btns .cancel {
+  @apply text-blue-950 bg-white border mx-3 hover:scale-110 duration-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center
+}
+
+.form_footer .btns .submit {
+  @apply text-white bg-green-600 border mx-3 hover:scale-110 duration-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center
+}
+
+.sidebar {
+  @apply w-1/6 bg-slate-800 h-screen pt-7 md:block hidden
+}
+
+.sidebar .search {
+  @apply bg-white rounded-3xl m-5 overflow-hidden px-3 py-2 flex justify-between items-center
+}
+
+.sidebar .search input {
+  @apply outline-0
+}
+
+.sidebar .search i {
+  @apply text-slate-400
+}
+
+.sidebar .dashboard {
+  @apply flex justify-start items-center text-slate-400 font-bold ms-5
+}
+
+.sidebar .dashboard p {
+  @apply ms-2
+}
+
+.sidebar .settings {
+  @apply text-slate-500 text-xs ms-5 my-7 font-medium
+}
+
+.sidebar .data_cotent {
+  @apply text-slate-400
+}
+
+.sidebar .data_cotent p {
+  @apply hover:bg-green-600 hover:text-slate-100 px-5 py-3 duration-200
+}
+
+.sidebar .data_cotent ul {
+  @apply bg-slate-700
+}
+
+.sidebar .data_cotent ul li {
+  @apply py-2 px-5 hover:bg-slate-500 hover:border-s-2 border-solid border-green-500 hover:text-green-500
+}
+
+/*NavBar*/
+.navbar {
+  @apply flex justify-between bg-white border-b-2 p-2
+}
+
+.navbar .rigth_items, .navbar .left_items {
+  @apply flex items-center text-stone-500
+}
+
+.navbar .rigth_items .fa-chevron-left {
+  @apply text-xs
+}
+
+.navbar .rigth_items .fa-bars {
+  @apply text-lg me-3
+}
+
+.navbar .date {
+  @apply text-stone-400 ms-2
+}
+
+.navbar .left_items i {
+  @apply me-3 text-lg
+}
+.navbar .left_items{
+  @apply relative
+}
+.personal_ {
+  @apply flex border-s-2 px-2
+}
+
+.personal_ div {
+  @apply w-7 h-7 bg-blue-100 rounded-full flex justify-center items-center text-sm mx-2 
+}
+
+.left_items> span {
+  @apply w-4 h-4 bg-red-600 rounded-full absolute top-0 left-9 text-xs text-white
 }

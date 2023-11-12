@@ -36,3 +36,6 @@
     transform: rotate(360deg);
   }
 }
+select.name__input span {
+  color: rgba(128, 128, 128, 0.401) !important
+}
